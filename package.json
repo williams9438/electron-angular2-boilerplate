@@ -1,7 +1,7 @@
 {
   "name": "electron-angular2-boilerplate",
   "description": "Simple Electron boilerplate with Angular 2+",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "author": {
     "name": "Guillaume Monnet",
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/255kb/electron-angular2-boilerplate",
   "scripts": {
-    "electron": "electron ./dist/main.js",
-    "watch": "ng build --watch",
+    "electron-serve": "electron ./serve/main.js --serve",
+    "watch": "ng build --watch --output-path=serve",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -50,6 +50,7 @@
     "@types/node": "~8.0.8",
     "codelyzer": "~3.1.2",
     "electron": "~1.6.11",
+    "electron-reload": "1.2.1",
     "jasmine-core": "~2.6.4",
     "jasmine-spec-reporter": "~4.1.1",
     "karma": "~1.7.0",
